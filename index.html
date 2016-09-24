@@ -13,7 +13,6 @@ div {
   background-size: cover;
   position: relative;
   margin: 40px 0 0 0;
-  border-radius: 12px;
 }
 h1 {
   font-family: 'Lora', serif;
@@ -25,14 +24,14 @@ h1 {
 h2 {
   text-align: center;
   color: #232323;
-  margin: 0px 0 70px 0;
+  margin: 30px 0 70px 0;
 }
-p {
-  color: rgba(255,255,255,1);
-  background: black;
-  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+p { 
+  color: white;
+  background: rgb(96, 153, 209);
+  background: linear-gradient(bottom, rgba(96, 153, 209,.8), rgba(6, 43, 80,.8));
+  background: -webkit-linear-gradient(bottom, rgba(96, 153, 209,.8), rgba(6, 43, 80,.8));
+  background: -moz-linear-gradient(bottom, rgba(96, 153, 209,.8), rgba(6, 43, 80,.8));
   padding: 10px;
   line-height: 28px;
   text-align: justify;
@@ -77,19 +76,23 @@ small {
 }
 @media (max-width: 500px) {
   div {
-    height: 350px;
+    height: 250px;
     margin: 20px 12px 0 10px;
-    background-size: cover;
     position: relative;
   }
+  
+  div.img-container {
+    background-size: 100%;
+  }
+  
   h1 {
     font-size: 50px;
-    margin-top: 20px;
+    margin-top: 50px;
     line-height: 40px;
   }
   h2 {
     font-size: 20px;
-    margin: 20px 0 30px 0;
+    margin: 30px 0 30px 0;
   
   p {
     font-size: 20px;
@@ -101,25 +104,24 @@ small {
 }
 
 </style>
-
 </head>
 
 <body>
 <h1>Mug life</h1>
 <h2>"I didn't choose the Mug life, <br> the Mug life chose me."</h2>
 
-<div class="first">
-    <p>Friends Mug <span class="price">$12</span><br>
+<div class="first img-container">
+    <p>Friends <span class="price">$12</span><br>
     <small>Perk up and smell the coffee if you're happy that Ross and Rachel finally got together. Ceramic mug with the Central Perk logo and a glossy glazed finish. </small></p>
   </div>
-  <div class="second">
+  <div class="second img-container">
     <p>Nope <span class="price">$26</span><br>
     <small>For the man/woman of few words, tell em' with this mug. Ceramic mug with the word "NOPE" and a glossy glazed finish.</small></p>
   </div>
 
-<div class="third">
-  <p>Shhhhhhh <span class="price">$8</span><br>
-  <small>When you can't deal until you've had your morning coffee but you don't want to seem nasty. Ceramic mug with metrics and a glossy glazed finish.</small></p>
+<div class="third img-container">
+  <p>Shhhhh <span class="price">$8</span><br>
+  <small>When you can't deal until you've had your morning coffee but you don't want to seem nasty. Ceramic mug with the "readiness for the day" meter and a glossy glazed finish.</small></p>
 </div>
 
 <script>
