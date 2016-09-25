@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <head>
-<link href="https://fonts.googleapis.com/css?family=Lora:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lora|Pavanam" rel="stylesheet">
 <style>
 body {
-  font-family: helvetica, sans-serif;
+  font-family: 'Pavanam', sans-serif;
   margin: 0 auto;
   max-width: 700px;
   background: #ffffff;
 }
+
 div {
   height: 500px;
   background-size: cover;
   position: relative;
   margin: 40px 0 0 0;
+  border: 2px #f0f5f5 solid; 
 }
+  
 h1 {
   font-family: 'Lora', serif;
   text-align: center;
@@ -22,10 +25,13 @@ h1 {
   margin: 60px 0 0 0;
 }
 h2 {
+  font-family: 'Lora', serif;
+  font-style: italic;
   text-align: center;
   color: #232323;
-  margin: 30px 0 70px 0;
+  margin: 30px 0 40px 0;
 }
+
 p { 
   color: white;
   background: rgb(96, 153, 209);
@@ -33,7 +39,8 @@ p {
   background: -webkit-linear-gradient(bottom, rgba(96, 153, 209,.8), rgba(6, 43, 80,.8));
   background: -moz-linear-gradient(bottom, rgba(96, 153, 209,.8), rgba(6, 43, 80,.8));
   padding: 10px;
-  line-height: 28px;
+  font-size: 20px;
+  line-height: 30px;
   text-align: justify;
   position: absolute;
   bottom: 0;
@@ -61,19 +68,23 @@ small {
   background-size: 700px;
   background-repeat: no-repeat;
 }
+
 .second {
   background-image: url("http://i.imgur.com/oyPDt9P.jpg");
   background-size: 700px; 
   background-repeat: no-repeat;
 }
+
 .third {
   background-image: url("http://i.imgur.com/50uGH70.jpg");
   background-size: 700px;
   background-repeat: no-repeat;
 }
+
 .price {
   float: right;
 }
+
 @media (max-width: 500px) {
   div {
     height: 250px;
@@ -102,7 +113,6 @@ small {
     font-size: 16px;
   }
 }
-
 </style>
 </head>
 
@@ -112,16 +122,16 @@ small {
 
 <div class="first img-container">
     <p>Friends <span class="price">$12</span><br>
-    <small>Perk up and smell the coffee if you're happy that Ross and Rachel finally got together. Ceramic mug with the Central Perk logo and a glossy glazed finish. </small></p>
+    <small>Perk up and smell the coffee if you're happy that Ross and Rachel ended up together. Ceramic mug with the Central Perk logo and a glossy glazed finish. </small></p>
   </div>
   <div class="second img-container">
     <p>Nope <span class="price">$26</span><br>
-    <small>For the man/woman of few words, tell em' with this mug. Ceramic mug with the word "NOPE" and a glossy glazed finish.</small></p>
+    <small>For the man/woman of few words, drink up and tell em' with this mug. Ceramic mug with the word "NOPE." and a glossy glazed finish.</small></p>
   </div>
 
 <div class="third img-container">
   <p>Shhhhh <span class="price">$8</span><br>
-  <small>When you can't deal until you've had your morning coffee but you don't want to seem nasty. Ceramic mug with the "readiness for the day" meter and a glossy glazed finish.</small></p>
+  <small>When you can't deal until you've had your morning coffee and you want to warn others. Ceramic mug with the "readiness for the day" scale and a glossy glazed finish.</small></p>
 </div>
 
 <script>
